@@ -11,7 +11,7 @@ public:
                 return mid;
             }
             if(arr[mid]<arr[mid+1]){
-                ans=mid;
+                
                 low=mid+1;
             }
             if(arr[mid]>arr[mid+1]){
