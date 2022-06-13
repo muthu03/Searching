@@ -9,7 +9,7 @@ public:
         int n2=nums2.size();
         int high=n1;
         while(low<=high){
-            int cut1=(low+high)>>1;
+            int cut1=(low+high)/2;
             int cut2=(n1+n2+1)/2-cut1;
             int l1 = cut1==0 ? INT_MIN : nums1[cut1-1];
             int r1 = cut1==n1 ? INT_MAX : nums1[cut1];
