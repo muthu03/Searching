@@ -3,11 +3,10 @@ public:
     bool ischeck(vector<int> & nums,int mid,int maxOperations){
         int total=0;
         for(auto i:nums){
-           
+            
+            total=total+i/mid;
             if(i%mid==0){
-                total=total+i/mid-1;
-            }else{
-                total=total+i/mid;
+                total--;
             }
             
         }
